@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Wafasalaf</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <div class="tab active">
+          <div class="tab-number">1</div>
+          <div class="tab-title">Simuler mon crédit</div>
+        </div>
+        <div class="tab">
+          <div class="tab-number">2</div>
+          <div class="tab-title">Mes coordonnées</div>
+        </div>
+        <div>
+          <div class="tab-number">3</div>
+          <div class="tab-title">Mes infos personnelles</div>
+        </div>
+      </div>
 
-<script src="js/script.js"></script>
-</body>
+      <div id="step-1">
+        <form>
+          <label for="project">Mon projet</label>
+          <select id="project">
+            <option>J'ai besoin de l'argen</option>
+            <option>Je finance mon véhicule d'occasion</option>
+            <option>Je gère mes imprévus</option>
+            <option>Je finance mon vehicule neuf</option>
+            <option>J'équipe ma maison</option>
+          </select>
+
+          <label for="profession">Je suis</label>
+          <select id="profession">
+            <option>Salarié du secteur privé</option>
+            <option>Fonctionnaire</option>
+            <option>Profession libérale</option>
+            <option>Commerçant</option>
+            <option>Artisan</option>
+            <option>Retraité</option>
+            <option>Autres Professions</option>
+          </select>
+
+          <label for="monatnt">Montant (en DH)</label>
+          <input type="number" id="montant" value="200000" min="1000" max="1000000" />
+          <input type="range" id="montant-range" min="1000" max="1000000" value="200000" step="1000">
+
+          <label for="duration">Durée (en mois)</label>
+          <input type="number" id="duration" value="18" min="12" max="60" />
+          <input type="range" id="duration-range" min="12" max="60" value="18">
+
+          <label for="mensualites">Mensualités (en DH)</label>
+          <input type="number" id="mensualites" value="12439.00" min="500" max="50000" />
+          <input type="range" id="mensualites-range" min="500" max="50000" value="12439.00">
+
+          <button type="submit">Continuer Sans Engagement</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

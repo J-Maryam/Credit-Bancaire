@@ -108,8 +108,8 @@ input[type=number]:focus {
 }
 .form-group select {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
+  padding: 9px;
+  border: 1px solid #a7a7a7;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -147,11 +147,11 @@ input[type=number]:focus {
 }
 
 .summary {
+  margin-left: 25px;
   max-width: 26%;
   flex: 1;
   background-color: white;
   height: 50%;
-  margin-left: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1px;
 }

@@ -169,4 +169,11 @@ input[type=number]:focus {
   color: #02afbc;
   font-weight: bold;
   padding: 5px;
+}
+
+.loi {
+  background-color: #f1f2f6;
+  text-align: justify;
+  padding: 3%;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

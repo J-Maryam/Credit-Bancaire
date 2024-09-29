@@ -1,11 +1,69 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mes coordonnées</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Crédit Bancaire</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div class="container">
+        <div class="simulator">
+            <div class="steps">
+                <div class="step" id="step1">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Simuler mon crédit</div>
+                </div>
+                <div class="step active" id="step2">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Mes coordonnées</div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Mes infos personnelles</div>
+                </div>
+            </div>
+            <div class="form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone mobile*</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="captcha">
+                            <!-- Placeholder for reCAPTCHA -->
+                            Je ne suis pas un robot
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btn-continue">
+                            Continuer
+                            <span class="btn-subtext">Sans engagement</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="summary">
+            <h2>Mon récapitulatif</h2>
+            <h3>Mon projet</h3>
+            <p id="summaryProject">Prêt Personnel</p>
+            <h3>Détails de mon crédit</h3>
+            <p>Vous êtes: <span id="summaryStatus"></span></p>
+            <p>Montant: <span id="summaryAmount"></span></p>
+            <p>Durée: <span id="summaryDuration"></span></p>
+            <p>Mensualité: <span id="summaryMonthly"></span></p>
+            <p>Frais de dossier: <span id="summaryFees"></span></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Simulation à titre indicatif et non contractuelle. La mensualité minimale est de 180 dirhams. Un client Wafasalaf peut bénéficier d'une tarification plus avantageuse en fonction de ses conditions préférentielles.</p>
+        <p>Conformément à la loi 09-08, vous disposez d'un droit d'accès, de rectification et d'opposition au traitement de vos données personnelles. Ce traitement est autorisé par la CNDP sous le numéro A-GC-206/2014.</p>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
